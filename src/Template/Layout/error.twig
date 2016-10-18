@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{ Html.charset()|raw }}
+    <title>
+        {{ _view.fetch('title')|raw }}
+    </title>
+    {{ Html.meta('icon')|raw }}
+
+    {{ Html.css('base.css')|raw }}
+    {{ Html.css('cake.css')|raw }}
+
+    {{ _view.fetch('meta')|raw }}
+    {{ _view.fetch('css')|raw }}
+    {{ _view.fetch('script')|raw }}
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>{{ __('Error') }}</h1>
+        </div>
+        <div id="content">
+            {{ Flash.render()|raw }}
+
+            {{ _view.fetch('content')|raw }}
+        </div>
+        <div id="footer">
+            {{ Html.link(__('Back'), 'javascript:history.back()')|raw }}
+        </div>
+    </div>
+</body>
+</html>
