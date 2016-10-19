@@ -10,7 +10,8 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "wyrihaximus/twig-view": "^3.3"
+        "wyrihaximus/twig-view": "^3.3",
+        "daoandco/cakephp-cachecleaner": "^1.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",

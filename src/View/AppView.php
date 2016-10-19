@@ -40,5 +40,6 @@ class AppView extends TwigView
 
         $this->loadHelper('Html');
         $this->loadHelper('Form');
+        $this->loadHelper('Webpack');
     }
 }

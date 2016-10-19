@@ -343,4 +343,11 @@ return [
     'Session' => [
         'defaults' => 'php',
     ],
+
+    'Webpack' => [
+      'assets' => [
+        'dev' => 'http://localhost:3003/webroot/app.js',
+        'config' => 'assets.json',
+      ],
+    ],
 ];

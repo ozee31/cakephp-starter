@@ -10,8 +10,7 @@
 
     {{ Html.meta('icon')|raw }}
 
-    {{ Html.css('base.css')|raw }}
-    {{ Html.css('cake.css')|raw }}
+    {{ Webpack.css()|raw }}
 
     {{ _view.fetch('meta')|raw }}
     {{ _view.fetch('css')|raw }}
@@ -34,7 +33,7 @@
         {{ _view.fetch('footer')|raw }}
     </footer>
 
-    {{ Html.script('app')|raw }}
+    {{ Webpack.script()|raw }}
     {{ _view.fetch('script')|raw }}
 </body>
 </html>

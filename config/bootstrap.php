@@ -77,6 +77,7 @@ use Cake\Utility\Security;
 try {
     Configure::config('default', new PhpConfig());
     Configure::load('app', 'default', false);
+    Configure::load('cachecleaner', 'default');
 } catch (\Exception $e) {
     exit($e->getMessage() . "\n");
 }
@@ -226,3 +227,4 @@ Plugin::load('Migrations');
 Plugin::load('WyriHaximus/TwigView', [
     'bootstrap' => true,
 ]);
+Plugin::load('CacheCleaner', ['bootstrap' => true, 'routes' => false]);
