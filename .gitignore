@@ -4,4 +4,4 @@
 /logs/*
 composer.lock
 /node_modules/*
-/front/build/config.js
+/front/build/config.jss
