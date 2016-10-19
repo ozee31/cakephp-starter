@@ -17,7 +17,7 @@ class WebpackHelper extends Helper {
   }
 
   public function css(array $options = []) {
-    if (Configure::read('debug')) {
+    if (Configure::read('debug') && (!isset($options['build']) || !$options['build'] )) {
       return;
     }
 
@@ -25,7 +25,7 @@ class WebpackHelper extends Helper {
   }
 
   public function script(array $options = []) {
-    if (Configure::read('debug')) {
+    if (Configure::read('debug') && (!isset($options['build']) || !$options['build'] )) {
       $url = Configure::read('Webpack.assets.dev');
       return $this->Html->script(Configure::read('Webpack.assets.dev'), $options);
     }

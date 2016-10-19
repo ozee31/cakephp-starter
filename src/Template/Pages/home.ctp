@@ -36,8 +36,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
         <?= $cakeDescription ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Webpack->css(['build' => true]) ?>
 </head>
 <body class="home">
     <header>
@@ -244,5 +243,7 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
             </div>
         </div>
     </div>
+
+    <?= $this->Webpack->script(['build' => true]) ?>
 </body>
 </html>
