@@ -346,7 +346,7 @@ return [
 
     'Webpack' => [
       'assets' => [
-        'dev' => 'http://localhost:3003/cakephp-starter/app.js',
+        'dev' => 'http://localhost:3003/app.js',
         'config' => 'assets.json',
       ],
     ],
