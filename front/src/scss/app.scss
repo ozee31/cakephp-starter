@@ -2,7 +2,8 @@
 @import 'cake';
 
 header {
-  background-color: orange;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
 
   p {
     color: green;

@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "updates": "npm-check-updates -u",
-    "build": "rm -rf webroot/css && rm -rf webroot/js && webpack --config front/build/webpack.prod.js",
+    "build": "rm -rf webroot/css && rm -rf webroot/js && rm -rf webroot/static && webpack --config front/build/webpack.prod.js",
     "dev": "node front/build/server.js"
   },
   "author": "Flavien Beninca <contact@flavienbeninca.fr>",

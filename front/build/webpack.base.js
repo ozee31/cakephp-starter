@@ -61,7 +61,7 @@ let webpack_base = {
         loader: 'url',
         query: {
           limit: 10,
-          name: '[name].[hash:7].[ext]'
+          name: 'static/[name].[hash:7].[ext]'
         }
       }
     ]

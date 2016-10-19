@@ -21,7 +21,7 @@ class WebpackHelper extends Helper {
       return;
     }
 
-    return $this->Html->css($this->_assets['css'], $options);
+    return '<link rel="stylesheet" href="' . $this->_assets['css'] . '">';
   }
 
   public function script(array $options = []) {
@@ -30,7 +30,7 @@ class WebpackHelper extends Helper {
       return $this->Html->script(Configure::read('Webpack.assets.dev'), $options);
     }
 
-    return $this->Html->script($this->_assets['js'], $options);
+    return '<script src="' . $this->_assets['js'] . '"></script>';
   }
 
   private function _loadAssetsConfig() {
